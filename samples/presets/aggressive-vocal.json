@@ -1,0 +1,55 @@
+{
+  "name": "Aggressive Vocal",
+  "description": "Bold, punchy vocals with aggressive compression and presence",
+  "effects": {
+    "pitchCorrection": {
+      "enabled": true,
+      "amount": 100,
+      "scale": "equal"
+    },
+    "eq": {
+      "enabled": true,
+      "bands": [
+        {
+          "frequency": 80,
+          "gain": 2,
+          "q": 0.7
+        },
+        {
+          "frequency": 200,
+          "gain": -2,
+          "q": 0.8
+        },
+        {
+          "frequency": 4000,
+          "gain": 6,
+          "q": 1.5
+        },
+        {
+          "frequency": 10000,
+          "gain": 3,
+          "q": 1
+        }
+      ]
+    },
+    "compression": {
+      "enabled": true,
+      "threshold": -12,
+      "ratio": 8,
+      "attack": 5,
+      "release": 50
+    },
+    "reverb": {
+      "enabled": true,
+      "roomSize": 0.25,
+      "damping": 0.4,
+      "wetLevel": 0.1,
+      "dryLevel": 1
+    },
+    "limiter": {
+      "enabled": true,
+      "threshold": -2,
+      "release": 80
+    }
+  }
+}

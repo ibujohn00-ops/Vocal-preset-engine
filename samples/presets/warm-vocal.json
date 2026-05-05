@@ -1,0 +1,55 @@
+{
+  "name": "Warm Vocal",
+  "description": "Warm, smooth vocals with rich low-mids and reduced harshness",
+  "effects": {
+    "pitchCorrection": {
+      "enabled": true,
+      "amount": 95,
+      "scale": "equal"
+    },
+    "eq": {
+      "enabled": true,
+      "bands": [
+        {
+          "frequency": 150,
+          "gain": 3,
+          "q": 0.8
+        },
+        {
+          "frequency": 1000,
+          "gain": 2,
+          "q": 1
+        },
+        {
+          "frequency": 3000,
+          "gain": -3,
+          "q": 1.2
+        },
+        {
+          "frequency": 8000,
+          "gain": -4,
+          "q": 1
+        }
+      ]
+    },
+    "compression": {
+      "enabled": true,
+      "threshold": -20,
+      "ratio": 3,
+      "attack": 30,
+      "release": 150
+    },
+    "reverb": {
+      "enabled": true,
+      "roomSize": 0.45,
+      "damping": 0.6,
+      "wetLevel": 0.25,
+      "dryLevel": 1
+    },
+    "limiter": {
+      "enabled": true,
+      "threshold": -6,
+      "release": 120
+    }
+  }
+}

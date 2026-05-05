@@ -1,0 +1,55 @@
+{
+  "name": "Bright Vocal",
+  "description": "Clear, crisp vocals with presence peak and controlled sibilance",
+  "effects": {
+    "pitchCorrection": {
+      "enabled": true,
+      "amount": 100,
+      "scale": "equal"
+    },
+    "eq": {
+      "enabled": true,
+      "bands": [
+        {
+          "frequency": 100,
+          "gain": -3,
+          "q": 0.7
+        },
+        {
+          "frequency": 2000,
+          "gain": -2,
+          "q": 1
+        },
+        {
+          "frequency": 5000,
+          "gain": 4,
+          "q": 1.5
+        },
+        {
+          "frequency": 12000,
+          "gain": 2,
+          "q": 1
+        }
+      ]
+    },
+    "compression": {
+      "enabled": true,
+      "threshold": -18,
+      "ratio": 4,
+      "attack": 10,
+      "release": 100
+    },
+    "reverb": {
+      "enabled": true,
+      "roomSize": 0.35,
+      "damping": 0.5,
+      "wetLevel": 0.15,
+      "dryLevel": 1
+    },
+    "limiter": {
+      "enabled": true,
+      "threshold": -3,
+      "release": 100
+    }
+  }
+}
